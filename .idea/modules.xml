@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/fancy-seckill.iml" filepath="$PROJECT_DIR$/.idea/fancy-seckill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seckill-account/seckill-account.iml" filepath="$PROJECT_DIR$/seckill-account/seckill-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seckill-common-facade/seckill-common-facade.iml" filepath="$PROJECT_DIR$/seckill-common-facade/seckill-common-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seckill-order/seckill-order.iml" filepath="$PROJECT_DIR$/seckill-order/seckill-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seckill-product/seckill-product.iml" filepath="$PROJECT_DIR$/seckill-product/seckill-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seckill-web/seckill-web.iml" filepath="$PROJECT_DIR$/seckill-web/seckill-web.iml" />
+    </modules>
+  </component>
+</project>
