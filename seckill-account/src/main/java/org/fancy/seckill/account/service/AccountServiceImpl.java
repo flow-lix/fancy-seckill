@@ -1,17 +1,12 @@
 package org.fancy.seckill.account.service;
 
-import org.apache.dubbo.common.utils.CollectionUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.fancy.seckill.entity.UserEntity;
 import org.fancy.seckill.facade.account.IAccountService;
 import org.fancy.seckill.req.account.LoginReq;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
-import java.util.List;
-
-@Service
+@Slf4j
 @DubboService(version = "1.0.0")
 public class AccountServiceImpl implements IAccountService {
 
@@ -33,7 +28,7 @@ public class AccountServiceImpl implements IAccountService {
 //        if (CollectionUtils.isEmpty(userEntityList)) {
 //            throw new CommonBizException(ExpCodeEnum.LOGIN_FAIL);
 //        }
-
+        log.info("Dubbo 登录成功！");
         // 查询成功
 //        return userEntityList.get(0);
         return new UserEntity();

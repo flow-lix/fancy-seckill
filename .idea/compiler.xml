@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="seckill-account" />
         <module name="seckill-product" />
-        <module name="seckill-common-facade" />
-        <module name="seckill-order" />
         <module name="seckill-web" />
+        <module name="seckill-order" />
+        <module name="seckill-common-facade" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
