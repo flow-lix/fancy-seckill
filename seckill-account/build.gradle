@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.fancy.seckill'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+bootJar {
+    // 没有启动类，不能构建启动Jar
+    enabled = false
+}
+
+jar {
+    // 只构建Jar
+    enabled = true
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://maven.aliyun.com/repository/public')
+    }
+}
+
+dependencies {
+    implementation project(':seckill-common')
+}

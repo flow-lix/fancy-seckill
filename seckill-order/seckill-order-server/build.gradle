@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.fancy.seckill'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://maven.aliyun.com/repository/public')
+    }
+    jcenter()
+}
+
+dependencies {
+    implementation project(':seckill-common')
+    implementation project(':seckill-order:seckill-order-api')
+    implementation 'mysql:mysql-connector-java:8.0.20'
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.3.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+}
